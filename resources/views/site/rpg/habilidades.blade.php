@@ -15,11 +15,11 @@
             <div class="modal-content rounded-4 shadow" style="width: 100%;">
                 <div class="text-center ">
                     <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
-                    <h1 class="fw-bold mb-0 fs-2 text-center">Lista de Atributos</h1>
+                    <h1 class="fw-bold mb-0 fs-2 text-center">Lista de Habilidade</h1>
 
                 </div>
                 <div class="d-grid gap-2">
-                     <a href="/atributo" class="btn btn-outline-danger rounded-0">Novo Registro</a>
+                     <a href="/habilidade" class="btn btn-outline-danger rounded-0">Novo Registro</a>
                   </div>
                 <div class="bd-example-snippet bd-code-snippet">
                     <div class="bd-example">
@@ -34,13 +34,13 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($atributos as $atributo)
+                                @foreach ($habilidades as $habilidade)
                                     <tr>
-                                        <td>{{ $atributo->id }}</td>
-                                        <td>{{ $atributo->nome }}</td>
-                                        <td>{{ $atributo->descricao }}</td>
-                                        <td>{{ $atributo->tipo }}</td>
-                                        <td>{{ $atributo->referencia }}</td>
+                                        <td>{{ $habilidade->id }}</td>
+                                        <td>{{ $habilidade->nome }}</td>
+                                        <td>{{ $habilidade->descricao }}</td>
+                                        <td>{{ $habilidade->tipo }}</td>
+                                        <td>{{ $habilidade->referencia }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>

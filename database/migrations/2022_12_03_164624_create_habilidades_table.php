@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nome', 45)->nullable();
             $table->longText('descricao')->nullable();
             $table->string('tipo', 45)->nullable();
+            $table->string('referencia', 45)->nullable();
             $table->timestamps();
         });
     }

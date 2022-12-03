@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AtributoController;
 use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\HabilidadeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::resource('atributo', AtributoController::class);
     Route::get('/atributos', [AtributoController::class, 'listar'])->name('atributo.listar');
+    Route::resource('habilidade', HabilidadeController::class);
+    Route::get('/habilidades', [HabilidadeController::class, 'listar'])->name('habilidade.listar');
     
 });
 

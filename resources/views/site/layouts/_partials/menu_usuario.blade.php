@@ -28,6 +28,7 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="{{ route('atributo.listar') }}">Atributos</a></li> 
+                      <li><a class="dropdown-item" href="{{ route('habilidade.listar') }}">Habilidades</a></li> 
                     </ul>
                   </li>
                 <li class="nav-item dropdown text-white">
@@ -36,10 +37,12 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="{{ route('login') }}">Acessar</a></li>
+                      
                       <li><a class="dropdown-item" href="{{ route('register') }}">Registrar</a></li> 
+                      <li><a class="dropdown-item" href="{{ route('register') }}">Sair</a></li> 
                     </ul>
                   </li>
-            </ul>
+                </ul>
         </div>
     </div>
 </nav>
