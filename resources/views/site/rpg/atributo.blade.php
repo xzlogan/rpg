@@ -1,11 +1,11 @@
 @extends('site.layouts.basico')
 
 @section('titulo', 'Vampiro')
-@section('imagem_principal', 'img/img03.jpg')
+@section('imagem_principal', 'public/img/img03.jpg')
 
 @section('conteudo')
     <div class="card bg-secondary rounded-0 border border-0">
-        <img class="" src="{{ asset('img/sangue01.png') }}" class="card-img" alt="...">
+        <img class="" src="{{ asset('public/img/sangue01.png') }}" class="card-img" alt="...">
         <div class="card-img-overlay">
              
         </div>
@@ -27,19 +27,26 @@
                             <label for="floatingInput" class="text-danger">Nome do Atributo</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control rounded-3" id="descricao"
-                                placeholder="name@example.com" name="descricao">
+                            <select class="form-select text-danger" aria-label="Default select example" name="tipo">
+                                <option selected>Selecione o tipo</option>
+                                <option value="Físico">Físico</option>
+                                <option value="Social">Social</option>
+                                <option value="Mental">Mental</option>
+                              </select> 
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select text-danger" aria-label="Default select example" name="referencia">
+                                <option selected>Selecione a referência</option>
+                                <option value="Vampiro">Vampiro</option>
+                                <option value="Mago">Mago</option>
+                                <option value="Lobisomem">Lobisomem </option>
+                                <option value="Humano">Humano</option>
+                              </select>  
+                        </div>
+                        
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="descricao" rows="30" name="descricao"></textarea>
                             <label for="floatingInput" class="text-danger">Descrição</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control rounded-3" id="tipo"
-                                placeholder="name@example.com" name="tipo">
-                            <label for="floatingInput" class="text-danger">Tipo</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control rounded-3" id="referencia"
-                                placeholder="name@example.com" name="referencia">
-                            <label for="floatingInput" class="text-danger">Referência</label>
                         </div>
                         <button class="w-100 mb-2 btn btn-lg rounded-3 btn-secondary" type="submit">Cadastro</button>
                     </form>
