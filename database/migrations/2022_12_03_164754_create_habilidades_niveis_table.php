@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('atributos_niveis', function (Blueprint $table) {
+        Schema::create('habilidades_niveis', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_atributos');
+            $table->unsignedBigInteger('id_habilidades');
             $table->integer('nivel')->nullable();
             $table->string('descricao', 45)->nullable();
             $table->timestamps();
-            $table->foreign('id_atributos')->references('id')->on('atributos');
+            $table->foreign('id_habilidades')->references('id')->on('habilidades');
         });
     }
 
@@ -30,13 +30,10 @@ return new class extends Migration
      */
     public function down()
     {
-        
-        Schema::table('atributos_niveis', function (Blueprint $table){
-             
-            $table->dropForeign('atributos_niveis_id_atributos_foreign'); 
-            
-             
+        Schema::table('habilidades_niveis', function (Blueprint $table) {
+
+            $table->dropForeign('habilidades_niveis_id_habilidades_foreign');
         });
-        Schema::dropIfExists('atributos_niveis');
+        Schema::dropIfExists('habilidades_niveis');
     }
 };
