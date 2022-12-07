@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('conceitos', function (Blueprint $table) {
             $table->id(); 
             $table->string('titulo', 45)->nullable()->default(null);
-            $table->string('descricao', 45)->nullable()->default(null);
-            $table->string('requisito', 45)->nullable()->default(null);
-            $table->string('bonus', 45)->nullable()->default(null); 
+            $table->longText('descricao')->nullable();
+            $table->longText('requisito')->nullable()->default(null);
+            $table->longText('bonus')->nullable()->default(null); 
             $table->timestamps();
         });
     }

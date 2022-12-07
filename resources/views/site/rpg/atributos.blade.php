@@ -23,7 +23,7 @@
                   </div>
                 <div class="bd-example-snippet bd-code-snippet">
                     <div class="bd-example">
-                        <table class="table table-dark table-borderless">
+                        <table class="table table-dark table-hover">
                             <thead>
                                 <tr>
                                     <th scope="col">ID</th>

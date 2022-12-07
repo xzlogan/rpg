@@ -15,11 +15,11 @@
             <div class="modal-content rounded-4 shadow" style="width: 100%;">
                 <div class="text-center ">
                     <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
-                    <h1 class="fw-bold mb-0 fs-2 text-center">Lista de Habilidade</h1>
+                    <h1 class="fw-bold mb-0 fs-2 text-center">Lista de Conceitos</h1>
 
                 </div>
                 <div class="d-grid gap-2">
-                     <a href="/habilidade" class="btn btn-outline-danger rounded-0">Novo Registro</a>
+                     <a href="/conceito" class="btn btn-outline-danger rounded-0">Novo Registro</a>
                   </div>
                 <div class="bd-example-snippet bd-code-snippet">
                     <div class="bd-example">
@@ -27,20 +27,20 @@
                             <thead>
                                 <tr>
                                     <th scope="col">ID</th>
-                                    <th scope="col">Nome</th>
+                                    <th scope="col">Título</th>
                                     <th scope="col">Descrição</th>
-                                    <th scope="col">Tipo</th>
-                                    <th scope="col">Referência</th>
+                                    <th scope="col">Requisito</th>
+                                    <th scope="col">Bônus</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($habilidades as $habilidade)
+                                @foreach ($conceitos as $conceito)
                                     <tr>
-                                        <td>{{ $habilidade->id }}</td>
-                                        <td>{{ $habilidade->nome }}</td>
-                                        <td>{{ $habilidade->descricao }}</td>
-                                        <td>{{ $habilidade->tipo }}</td>
-                                        <td>{{ $habilidade->referencia }}</td>
+                                        <td>{{ $conceito->id }}</td>
+                                        <td>{{ $conceito->titulo }}</td>
+                                        <td>{{ $conceito->descricao }}</td>
+                                        <td>{{ $conceito->requisito }}</td>
+                                        <td>{{ $conceito->bonus }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>
