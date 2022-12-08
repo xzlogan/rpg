@@ -6,6 +6,7 @@ use App\Http\Controllers\AtributoController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\HabilidadeController;
 use App\Http\Controllers\ConceitoController;
+use App\Http\Controllers\PredadorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/habilidades', [HabilidadeController::class, 'listar'])->name('habilidade.listar');
     Route::resource('conceito', ConceitoController::class);
     Route::get('/conceitos', [ConceitoController::class, 'listar'])->name('conceito.listar');
+    Route::resource('predador', PredadorController::class);
+    Route::get('/predadores', [PredadorController::class, 'listar'])->name('predador.listar');
 
     
     

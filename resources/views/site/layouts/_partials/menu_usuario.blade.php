@@ -30,6 +30,7 @@
                       <li><a class="dropdown-item" href="{{ route('atributo.listar') }}">Atributos</a></li> 
                       <li><a class="dropdown-item" href="{{ route('habilidade.listar') }}">Habilidades</a></li> 
                       <li><a class="dropdown-item" href="{{ route('conceito.listar') }}">Conceitos</a></li>
+                      <li><a class="dropdown-item" href="{{ route('predador.listar') }}">Predadores</a></li>
                     </ul>
                   </li>
                 <li class="nav-item dropdown text-white">

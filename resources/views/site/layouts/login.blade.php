@@ -23,26 +23,28 @@
     <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
         <div class="loginX"> 
         <div class=" p-3 bg-secondary bg-opacity-10 border border-info  rounded ">
-            <div class="conteudo-destaque">
+            <div class="conteudo-destaque text-info">
        
                 <!-- aqui vao o codigo da tela de login -->
         
                 <form method="POST" action="{{ route('login') }}">
                   @csrf
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <label for="exampleInputEmail1" class="form-label ">E-mail</label>
                       <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      <div id="emailHelp" class="form-text"> </div>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <label for="exampleInputPassword1" class="form-label">Senha</label>
                       <input type="password" class="form-control"  name="password" id="password">
                     </div>
                     <div class="mb-3 form-check">
+                      <!--
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                       -->
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
                   </form>
             </div>
           </div>
