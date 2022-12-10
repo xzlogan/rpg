@@ -7,7 +7,7 @@ use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\HabilidadeController;
 use App\Http\Controllers\ConceitoController;
 use App\Http\Controllers\PredadorController;
-use App\Http\Controllers\ClaController;
+use App\Http\Controllers\DisciplinaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,6 +44,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/predadores', [PredadorController::class, 'listar'])->name('predador.listar');
     Route::resource('cla', ClaController::class);
     Route::get('/clas', [ClaController::class, 'listar'])->name('cla.listar');
+    Route::resource('disciplina', DisciplinaController::class);
+    Route::get('/disciplinas', [DisciplinaController::class, 'listar'])->name('disciplina.listar');
 
     
     

@@ -32,6 +32,7 @@
                       <li><a class="dropdown-item" href="{{ route('conceito.listar') }}">Conceitos</a></li>
                       <li><a class="dropdown-item" href="{{ route('predador.listar') }}">Predadores</a></li>
                       <li><a class="dropdown-item" href="{{ route('cla.listar') }}">Clãs</a></li>
+                      <li><a class="dropdown-item" href="{{ route('disciplina.listar') }}">Disciplinas</a></li>
                     </ul>
                   </li>
                 <li class="nav-item dropdown text-white">
